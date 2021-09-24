@@ -1,4 +1,5 @@
 from flask import Flask,request,jsonify
+import model
 
 
 app = Flask(__name__)
@@ -10,7 +11,8 @@ def hello_world():
 
 @app.route("/book" , methods=["GET","POST"] )
 def bookAll() : 
-    return -1
+    if request.method == "GET" :
+        return model.get_book_all()
 
 
 
