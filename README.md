@@ -9,7 +9,7 @@ Here all the route and methods you can request to the API.
 - You can modify a book by id : `http://localhost:500/book/{id_book}`
 ### POST 📚
 - You can create a book with this url : `http://localhost:500/book`
-- Insert into the body request this : 
+- Insert into the body request this :</br> 
      e.g. `{"title": "Fairy tales","author": "Hans Christian Andersen","year": 1836}`
 ### DELETE 📚
 - You can delete book by id : `http://localhost:500/book/{id_book}`
