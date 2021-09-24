@@ -8,7 +8,7 @@ def get_store():
 
 def save_store(new_store):
     with open("./store.json", "w") as file:
-        json.dump(new_store , file)
+        json.dump(new_store, file)
 
 
 def add_book(data):

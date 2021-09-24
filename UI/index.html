@@ -5,14 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexandre API</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
     <script>
+        const SERVER_URL = 'http://localhost:5000'
+
         async function getBook() {
             const bookId = document.getElementById('get_book').value
-            book = await (await fetch('http://localhost:5000/book/' + bookId)).json()
+            const res = await fetch(`${SERVER_URL}/book/${bookId}`)
+            book = await res.json()
             displayBook(book)
         }
+
 
         function displayBook(book) {
             const displayContainer = document.getElementById('result_container')
@@ -20,7 +23,6 @@
             document.getElementById('result_title').innerHTML = book.title
             document.getElementById('result_author').innerHTML = book.author === 'Unknown' ? 'Unknown author' : book.author
             document.getElementById('result_year').innerHTML = book.year
-
         }
 
 
@@ -29,11 +31,11 @@
             const title = document.getElementById("title_add").value,
                   author = document.getElementById("author_add").value,
                   year = document.getElementById("year_add").value
-            
+
 
             const id_book = await (await fetch("http://localhost:5000/book" , {
                 method: "POST",
-                headers : {
+                headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json',
                 },
@@ -44,54 +46,56 @@
                 })
             })).json()
 
-
-            alert("Book Create : " + id_book.book_id)
+            alert("Book created : " + id_book.book_id)
         }
 
+        async function modifyBook() {
+            const bookId = document.getElementById('book_id_mod').value
+            const data = {
+                title: document.getElementById('title_mod').value,
+                author: document.getElementById('author_mod').value,
+                year: document.getElementById('year_mod').value
+            }
+            let str
+            for (const elt in data) {
+                if(data[elt] === '' || data[elt] === undefined) {
+                    delete data[elt]
+                }
+            }
+
+            const res = await fetch(`${SERVER_URL}/book/${bookId}`, {
+                method: "PUT",
+                headers : {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            })
+            const book = await res.json()
+            alert('Book modified')
+            displayBook(book)
+        }
     </script>
-    <style>
-    #container {
-        display: flex;
-        flex-direction: row;
-        width: 75%;
-        margin: auto;
-        padding: 2%;
-        background-color: rgb(7, 99, 130);
-        border-radius: 1%;
-        color: #EEE;
-    }
-    #form_container {
-        width: 800px;
-        flex: 1;
-    }
-    #form_container input, label {
-        display: block;
-    }
-    #result_container {
-        flex: 4;
-        padding: 10%;
-        background-color: rgb(4, 39, 50);
-        margin: 20%;
-        border-radius: 5%;
-    }
-
-
-    </style>
-    <!-- Maybe it would be better with a framework... but too many efforts-->
+</head>
+<body>
     <div id="container">
         <div id="form_container">
-            <label for="get_all_book">Get all book with their ids</label>
-            <button>Send</button>
-            <br>
+            <h1>Library</h1>
+            <a
+                href="list.html"
+                style="color:white; font-size: 18px;">
+                List all books
+            </a>
+            <br><br>
 
-            <label for="get_book">Get on book by id</label>
+            <label for="get_book">Get book by id</label>
             <input type="text" id="get_book"/>
             <br>
             <button onclick="getBook()">Send</button>
 
 
             <h3>Add book</h3>
-            
+
             <label for="title">Title</label>
             <input type="text" id="title_add"/>
             <br>
@@ -107,24 +111,24 @@
 
             <h3>Modify</h3>
             <label for="id">Id<label>
-            <input type="text" id="book_id">
+            <input type="text" id="book_id_mod">
             <br>
 
             <label for="title">Title</label>
-            <input type="text" id="title"/>
+            <input type="text" id="title_mod"/>
             <br>
 
             <label for="author">Author</label>
-            <input type="text" id="author"/>
+            <input type="text" id="author_mod"/>
             <br>
 
             <label for="year">Year</label>
-            <input type="text" id="year"/>
+            <input type="text" id="year_mod"/>
             <br>
-            <button>Send</button>
+            <button type="button" onclick="modifyBook()">Send</button>
 
         </div>
-        <div id="result_container" style="display:none">
+        <div id="result_container" style="display: none;">
             <h2>Result:</h2>
             <p><b>Title:</b></p>
             <p id="result_title"></p>
