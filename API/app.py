@@ -1,28 +1,31 @@
-from flask import Flask, request, jsonify, Response
+from flask import Flask, request, Response
+from flask_cors import cross_origin
 import model
-import json
 
 
 app = Flask(__name__)
 
 
 @app.route("/")
+@cross_origin()
 def hello_world():
     return "<p>Hello, World!</p>"
 
 
 @app.route("/book", methods=["GET", "POST"])
+@cross_origin()
 def book_all():
     if request.method == "GET":
         body, status = model.get_book_all()
         return body
     elif request.method == 'POST':
         new_book = request.json
-        r_ok = model.add_book(new_book)
-        return Response(status=r_ok)
+        book_id, r_ok = model.add_book(new_book)
+        return {'book_id': book_id}
 
 
 @app.route("/book/<int:id_book>", methods=["GET", "PUT", "DELETE"])
+@cross_origin()
 def book(id_book):
     if request.method == "GET":
         book, status = model.get_book(id_book)

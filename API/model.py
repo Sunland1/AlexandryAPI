@@ -17,7 +17,7 @@ def add_book(data):
         id_book = len(store)
         store[id_book] = data
         save_store(store)
-        return 200
+        return id_book, 200
 
     except Exception as e:
         print(f"failed to add book : {e}")

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandre API</title>
+</head>
+<body>
+    <script>
+        async function getBook() {
+            console.log('Hello')
+            const bookId = document.getElementById('get_book').value
+            book = await (await fetch('http://localhost:5000/book/' + bookId)).json()
+            displayBook(book)
+        }
+
+        function displayBook(book) {
+            const displayContainer = document.getElementById('result_container')
+            displayContainer.style.display = 'block'
+            document.getElementById('result_title').innerHTML = book.title
+            document.getElementById('result_author').innerHTML = book.author === 'Unknown' ? 'Unknown author' : book.author
+            document.getElementById('result_year').innerHTML = book.year
+
+        }
+
+    </script>
+    <style>
+    #container {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        margin: auto;
+        padding: 2%;
+        background-color: rgb(7, 99, 130);
+        border-radius: 1%;
+        color: #EEE;
+    }
+    #form_container {
+        width: 800px;
+        flex: 1;
+    }
+    #form_container input, label {
+        display: block;
+    }
+    #result_container {
+        flex: 4;
+        padding: 10%;
+        background-color: rgb(4, 39, 50);
+        margin: 20%;
+        border-radius: 5%;
+    }
+
+
+    </style>
+    <!-- Maybe it would be better with a framework... but too many efforts-->
+    <div id="container">
+        <div id="form_container">
+            <label for="get_all_book">Get all book with their ids</label>
+            <button>Send</button>
+            <br>
+
+            <label for="get_book">Get on book by id</label>
+            <input type="text" id="get_book"/>
+            <br>
+            <button onclick="getBook()">Send</button>
+
+
+            <h3>Add book</h3>
+            <input type="text" id="book_id">
+            <br>
+
+            <label for="title">Title</label>
+            <input type="text" id="title"/>
+            <br>
+
+            <label for="author">Author</label>
+            <input type="text" id="author"/>
+            <br>
+
+            <label for="year">Year</label>
+            <input type="text" id="year"/>
+            <br>
+            <button>Send</button>
+
+            <h3>Modify</h3>
+            <label for="id">Id<label>
+            <input type="text" id="book_id">
+            <br>
+
+            <label for="title">Title</label>
+            <input type="text" id="title"/>
+            <br>
+
+            <label for="author">Author</label>
+            <input type="text" id="author"/>
+            <br>
+
+            <label for="year">Year</label>
+            <input type="text" id="year"/>
+            <br>
+            <button>Send</button>
+
+        </div>
+        <div id="result_container" style="display:none">
+            <h2>Result:</h2>
+            <p><b>Title:</b></p>
+            <p id="result_title"></p>
+
+            <p><b>Author</b>:</p>
+            <p id="result_author"></p>
+
+            <p><b>Year:</b></p>
+            <p id="result_year"></p>
+        </div>
+    </div>
+</body>
+</html>
