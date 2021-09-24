@@ -15,13 +15,13 @@ def add_book(data):
     try:
         store = get_store()
         id_book = len(store)
-        store[id_book] = data
+        store[str(id_book)] = data        
         save_store(store)
         return id_book, 200
 
     except Exception as e:
         print(f"failed to add book : {e}")
-        return 500
+        return {},500
 
 
 def modify_book(data, id_book):

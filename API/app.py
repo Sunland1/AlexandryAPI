@@ -1,19 +1,17 @@
 from flask import Flask, request, Response
-from flask_cors import cross_origin
+from flask_cors import CORS
 import model
 
 
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route("/")
-@cross_origin()
 def hello_world():
     return "<p>Hello, World!</p>"
 
 
 @app.route("/book", methods=["GET", "POST"])
-@cross_origin()
 def book_all():
     if request.method == "GET":
         body, status = model.get_book_all()
@@ -25,7 +23,6 @@ def book_all():
 
 
 @app.route("/book/<int:id_book>", methods=["GET", "PUT", "DELETE"])
-@cross_origin()
 def book(id_book):
     if request.method == "GET":
         book, status = model.get_book(id_book)

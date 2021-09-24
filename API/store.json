@@ -14,26 +14,14 @@
     "author": "Dante Alighieri",
     "year": 1315
   },
-  "3": {
-    "title": "The Epic Of Gilgamesh",
-    "author": "Unknown",
-    "year": -1700
-  },
-  "4": {
-    "title": "The Book Of Job",
-    "author": "Unknown",
-    "year": -600
-  },
+  "3": { "title": "The Epic Of Gilgamesh", "author": "Unknown", "year": -1700 },
+  "4": { "title": "The Book Of Job", "author": "Unknown", "year": -600 },
   "5": {
     "title": "One Thousand and One Nights",
     "author": "Unknown",
     "year": 1200
   },
-  "6": {
-    "title": "Nj\u00e1l's Saga",
-    "author": "Unknown",
-    "year": 1350
-  },
+  "6": { "title": "Nj\u00e1l's Saga", "author": "Unknown", "year": 1350 },
   "7": {
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
@@ -54,26 +42,14 @@
     "author": "Giovanni Boccaccio",
     "year": 1351
   },
-  "11": {
-    "title": "Ficciones",
-    "author": "Jorge Luis Borges",
-    "year": 1965
-  },
+  "11": { "title": "Ficciones", "author": "Jorge Luis Borges", "year": 1965 },
   "12": {
     "title": "Wuthering Heights",
     "author": "Emily Bront\u00eb",
     "year": 1847
   },
-  "13": {
-    "title": "The Stranger",
-    "author": "Albert Camus",
-    "year": 1942
-  },
-  "14": {
-    "title": "Poems",
-    "author": "Paul Celan",
-    "year": 1952
-  },
+  "13": { "title": "The Stranger", "author": "Albert Camus", "year": 1942 },
+  "14": { "title": "Poems", "author": "Paul Celan", "year": 1952 },
   "15": {
     "title": "Journey to the End of the Night",
     "author": "Louis-Ferdinand C\u00e9line",
@@ -89,16 +65,8 @@
     "author": "Geoffrey Chaucer",
     "year": 1450
   },
-  "18": {
-    "title": "Stories",
-    "author": "Anton Chekhov",
-    "year": 1886
-  },
-  "19": {
-    "title": "Nostromo",
-    "author": "Joseph Conrad",
-    "year": 1904
-  },
+  "18": { "title": "Stories", "author": "Anton Chekhov", "year": 1886 },
+  "19": { "title": "Nostromo", "author": "Joseph Conrad", "year": 1904 },
   "20": {
     "title": "Great Expectations",
     "author": "Charles Dickens",
@@ -119,11 +87,7 @@
     "author": "Fyodor Dostoevsky",
     "year": 1866
   },
-  "24": {
-    "title": "The Idiot",
-    "author": "Fyodor Dostoevsky",
-    "year": 1869
-  },
+  "24": { "title": "The Idiot", "author": "Fyodor Dostoevsky", "year": 1869 },
   "25": {
     "title": "The Possessed",
     "author": "Fyodor Dostoevsky",
@@ -134,21 +98,9 @@
     "author": "Fyodor Dostoevsky",
     "year": 1880
   },
-  "27": {
-    "title": "Middlemarch",
-    "author": "George Eliot",
-    "year": 1871
-  },
-  "28": {
-    "title": "Invisible Man",
-    "author": "Ralph Ellison",
-    "year": 1952
-  },
-  "29": {
-    "title": "Medea",
-    "author": "Euripides",
-    "year": -431
-  },
+  "27": { "title": "Middlemarch", "author": "George Eliot", "year": 1871 },
+  "28": { "title": "Invisible Man", "author": "Ralph Ellison", "year": 1952 },
+  "29": { "title": "Medea", "author": "Euripides", "year": -431 },
   "30": {
     "title": "Absalom, Absalom!",
     "author": "William Faulkner",
@@ -189,11 +141,7 @@
     "author": "Johann Wolfgang von Goethe",
     "year": 1832
   },
-  "38": {
-    "title": "Dead Souls",
-    "author": "Nikolai Gogol",
-    "year": 1842
-  },
+  "38": { "title": "Dead Souls", "author": "Nikolai Gogol", "year": 1842 },
   "39": {
     "title": "The Tin Drum",
     "author": "G\u00fcnter Grass",
@@ -204,51 +152,19 @@
     "author": "Jo\u00e3o Guimar\u00e3es Rosa",
     "year": 1956
   },
-  "41": {
-    "title": "Hunger",
-    "author": "Knut Hamsun",
-    "year": 1890
-  },
+  "41": { "title": "Hunger", "author": "Knut Hamsun", "year": 1890 },
   "42": {
     "title": "The Old Man and the Sea",
     "author": "Ernest Hemingway",
     "year": 1952
   },
-  "43": {
-    "title": "Iliad",
-    "author": "Homer",
-    "year": -735
-  },
-  "44": {
-    "title": "Odyssey",
-    "author": "Homer",
-    "year": -800
-  },
-  "45": {
-    "title": "A Doll's House",
-    "author": "Henrik Ibsen",
-    "year": 1879
-  },
-  "46": {
-    "title": "Ulysses",
-    "author": "James Joyce",
-    "year": 1922
-  },
-  "47": {
-    "title": "Stories",
-    "author": "Franz Kafka",
-    "year": 1924
-  },
-  "48": {
-    "title": "The Trial",
-    "author": "Franz Kafka",
-    "year": 1925
-  },
-  "49": {
-    "title": "The Castle",
-    "author": "Franz Kafka",
-    "year": 1926
-  },
+  "43": { "title": "Iliad", "author": "Homer", "year": -735 },
+  "44": { "title": "Odyssey", "author": "Homer", "year": -800 },
+  "45": { "title": "A Doll's House", "author": "Henrik Ibsen", "year": 1879 },
+  "46": { "title": "Ulysses", "author": "James Joyce", "year": 1922 },
+  "47": { "title": "Stories", "author": "Franz Kafka", "year": 1924 },
+  "48": { "title": "The Trial", "author": "Franz Kafka", "year": 1925 },
+  "49": { "title": "The Castle", "author": "Franz Kafka", "year": 1926 },
   "50": {
     "title": "The recognition of Shakuntala",
     "author": "K\u0101lid\u0101sa",
@@ -274,11 +190,7 @@
     "author": "Halld\u00f3r Laxness",
     "year": 1934
   },
-  "55": {
-    "title": "Poems",
-    "author": "Giacomo Leopardi",
-    "year": 1818
-  },
+  "55": { "title": "Poems", "author": "Giacomo Leopardi", "year": 1818 },
   "56": {
     "title": "The Golden Notebook",
     "author": "Doris Lessing",
@@ -289,46 +201,22 @@
     "author": "Astrid Lindgren",
     "year": 1945
   },
-  "58": {
-    "title": "Diary of a Madman",
-    "author": "Lu Xun",
-    "year": 1918
-  },
+  "58": { "title": "Diary of a Madman", "author": "Lu Xun", "year": 1918 },
   "59": {
     "title": "Children of Gebelawi",
     "author": "Naguib Mahfouz",
     "year": 1959
   },
-  "60": {
-    "title": "Buddenbrooks",
-    "author": "Thomas Mann",
-    "year": 1901
-  },
+  "60": { "title": "Buddenbrooks", "author": "Thomas Mann", "year": 1901 },
   "61": {
     "title": "The Magic Mountain",
     "author": "Thomas Mann",
     "year": 1924
   },
-  "62": {
-    "title": "Moby Dick",
-    "author": "Herman Melville",
-    "year": 1851
-  },
-  "63": {
-    "title": "Essays",
-    "author": "Michel de Montaigne",
-    "year": 1595
-  },
-  "64": {
-    "title": "History",
-    "author": "Elsa Morante",
-    "year": 1974
-  },
-  "65": {
-    "title": "Beloved",
-    "author": "Toni Morrison",
-    "year": 1987
-  },
+  "62": { "title": "Moby Dick", "author": "Herman Melville", "year": 1851 },
+  "63": { "title": "Essays", "author": "Michel de Montaigne", "year": 1595 },
+  "64": { "title": "History", "author": "Elsa Morante", "year": 1974 },
+  "65": { "title": "Beloved", "author": "Toni Morrison", "year": 1987 },
   "66": {
     "title": "The Tale of Genji",
     "author": "Murasaki Shikibu",
@@ -339,31 +227,19 @@
     "author": "Robert Musil",
     "year": 1931
   },
-  "68": {
-    "title": "Lolita",
-    "author": "Vladimir Nabokov",
-    "year": 1955
-  },
+  "68": { "title": "Lolita", "author": "Vladimir Nabokov", "year": 1955 },
   "69": {
     "title": "Nineteen Eighty-Four",
     "author": "George Orwell",
     "year": 1949
   },
-  "70": {
-    "title": "Metamorphoses",
-    "author": "Ovid",
-    "year": 100
-  },
+  "70": { "title": "Metamorphoses", "author": "Ovid", "year": 100 },
   "71": {
     "title": "The Book of Disquiet",
     "author": "Fernando Pessoa",
     "year": 1928
   },
-  "72": {
-    "title": "Tales",
-    "author": "Edgar Allan Poe",
-    "year": 1950
-  },
+  "72": { "title": "Tales", "author": "Edgar Allan Poe", "year": 1950 },
   "73": {
     "title": "In Search of Lost Time",
     "author": "Marcel Proust",
@@ -374,56 +250,24 @@
     "author": "Fran\u00e7ois Rabelais",
     "year": 1533
   },
-  "75": {
-    "title": "Pedro P\u00e1ramo",
-    "author": "Juan Rulfo",
-    "year": 1955
-  },
-  "76": {
-    "title": "The Masnavi",
-    "author": "Rumi",
-    "year": 1236
-  },
+  "75": { "title": "Pedro P\u00e1ramo", "author": "Juan Rulfo", "year": 1955 },
+  "76": { "title": "The Masnavi", "author": "Rumi", "year": 1236 },
   "77": {
     "title": "Midnight's Children",
     "author": "Salman Rushdie",
     "year": 1981
   },
-  "78": {
-    "title": "Bostan",
-    "author": "Saadi",
-    "year": 1257
-  },
+  "78": { "title": "Bostan", "author": "Saadi", "year": 1257 },
   "79": {
     "title": "Season of Migration to the North",
     "author": "Tayeb Salih",
     "year": 1966
   },
-  "80": {
-    "title": "Blindness",
-    "author": "Jos\u00e9 Saramago",
-    "year": 1995
-  },
-  "81": {
-    "title": "Hamlet",
-    "author": "William Shakespeare",
-    "year": 1603
-  },
-  "82": {
-    "title": "King Lear",
-    "author": "William Shakespeare",
-    "year": 1608
-  },
-  "83": {
-    "title": "Othello",
-    "author": "William Shakespeare",
-    "year": 1609
-  },
-  "84": {
-    "title": "Oedipus the King",
-    "author": "Sophocles",
-    "year": -430
-  },
+  "80": { "title": "Blindness", "author": "Jos\u00e9 Saramago", "year": 1995 },
+  "81": { "title": "Hamlet", "author": "William Shakespeare", "year": 1603 },
+  "82": { "title": "King Lear", "author": "William Shakespeare", "year": 1608 },
+  "83": { "title": "Othello", "author": "William Shakespeare", "year": 1609 },
+  "84": { "title": "Oedipus the King", "author": "Sophocles", "year": -430 },
   "85": {
     "title": "The Red and the Black",
     "author": "Stendhal",
@@ -444,16 +288,8 @@
     "author": "Jonathan Swift",
     "year": 1726
   },
-  "89": {
-    "title": "War and Peace",
-    "author": "Leo Tolstoy",
-    "year": 1867
-  },
-  "90": {
-    "title": "Anna Karenina",
-    "author": "Leo Tolstoy",
-    "year": 1877
-  },
+  "89": { "title": "War and Peace", "author": "Leo Tolstoy", "year": 1867 },
+  "90": { "title": "Anna Karenina", "author": "Leo Tolstoy", "year": 1877 },
   "91": {
     "title": "The Death of Ivan Ilyich",
     "author": "Leo Tolstoy",
@@ -464,31 +300,11 @@
     "author": "Mark Twain",
     "year": 1884
   },
-  "93": {
-    "title": "Ramayana",
-    "author": "Valmiki",
-    "year": -450
-  },
-  "94": {
-    "title": "The Aeneid",
-    "author": "Virgil",
-    "year": -23
-  },
-  "95": {
-    "title": "Mahabharata",
-    "author": "Vyasa",
-    "year": -700
-  },
-  "96": {
-    "title": "Leaves of Grass",
-    "author": "Walt Whitman",
-    "year": 1855
-  },
-  "97": {
-    "title": "Mrs Dalloway",
-    "author": "Virginia Woolf",
-    "year": 1925
-  },
+  "93": { "title": "Ramayana", "author": "Valmiki", "year": -450 },
+  "94": { "title": "The Aeneid", "author": "Virgil", "year": -23 },
+  "95": { "title": "Mahabharata", "author": "Vyasa", "year": -700 },
+  "96": { "title": "Leaves of Grass", "author": "Walt Whitman", "year": 1855 },
+  "97": { "title": "Mrs Dalloway", "author": "Virginia Woolf", "year": 1925 },
   "98": {
     "title": "To the Lighthouse",
     "author": "Virginia Woolf",
@@ -498,5 +314,6 @@
     "title": "Memoirs of Hadrian",
     "author": "Marguerite Yourcenar",
     "year": 1951
-  }
+  },
+  "100": { "title": "a", "author": "a", "year": "2021" }
 }
