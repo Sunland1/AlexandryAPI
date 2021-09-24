@@ -1,7 +1,8 @@
 # AlexandryAPI 🚀
 
 ## API 
-Here all the route and methods you can request to the API.
+Here all the route and methods you can request to the API.</br>
+Don't forget to install the dependencies with pip !
 ### GET 📚
 - You can get on book by id : `http://localhost:500/book/{id_book}`
 - You can get all book : `http://localhost:5000/book`
